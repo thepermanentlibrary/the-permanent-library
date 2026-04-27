@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Permanent Library — Terms of Service</title>
+<style>
+:root {
+  --vault-950:#0a0b0d;--vault-900:#111318;--vault-800:#1a1d24;--vault-700:#252930;
+  --vault-600:#3a3f4a;--vault-500:#555b68;--vault-400:#7d8491;--vault-300:#b0b5bf;
+  --vault-200:#d4d7dd;--vault-100:#ecedf0;--amber:#d4a04a;--amber-bright:#f0c05e;
+  --amber-dim:#9a7432;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Georgia','Times New Roman',serif;background:var(--vault-950);
+  color:var(--vault-200);min-height:100vh;line-height:1.8}
+::selection{background:var(--amber);color:var(--vault-950)}
+.container{max-width:800px;margin:0 auto;padding:24px 32px}
+
+header{padding:32px 0 24px;margin-bottom:28px;text-align:center;
+  border-bottom:1px solid var(--vault-800);position:relative}
+header::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);
+  width:120px;height:2px;background:linear-gradient(90deg,transparent,var(--amber),transparent)}
+header h1{font-size:30px;color:var(--vault-100);letter-spacing:1px;font-weight:normal}
+header .tagline{font-size:13px;color:var(--vault-500);font-family:system-ui,sans-serif;
+  margin-top:6px;font-style:italic;letter-spacing:0.3px}
+.nav-link{color:var(--amber-dim);font-size:12px;font-family:system-ui,sans-serif;
+  text-decoration:none;margin-top:8px;display:inline-block;letter-spacing:0.3px;
+  transition:color 0.2s}
+.nav-link:hover{color:var(--amber)}
+
+h2{font-size:20px;color:var(--vault-100);margin:32px 0 12px;font-weight:normal}
+h2:first-of-type{margin-top:0}
+p{margin:10px 0;font-size:15px;color:var(--vault-200)}
+ul{padding-left:24px;margin:10px 0}
+li{margin:6px 0;font-size:15px;color:var(--vault-200)}
+li strong{color:var(--vault-100)}
+strong{color:var(--vault-100)}
+a{color:var(--amber);text-decoration:none}
+a:hover{text-decoration:underline}
+.updated{font-size:13px;color:var(--vault-500);font-family:system-ui,sans-serif;
+  font-style:italic;margin-bottom:24px;text-align:center}
+.caps{text-transform:uppercase;font-family:system-ui,sans-serif;font-size:13px;
+  line-height:1.7;color:var(--vault-300)}
+.section-divider{border:none;border-top:1px solid var(--vault-800);margin:32px 0}
+
+footer{border-top:1px solid var(--vault-800);margin-top:40px;padding:20px 0;
+  font-size:11px;color:var(--vault-600);font-family:system-ui,sans-serif;
+  display:flex;justify-content:space-between;align-items:center}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>The Permanent Library</h1>
+    <p class="tagline">Terms of Service and Legal Disclaimer</p>
+    <a href="/" class="nav-link">← Back to The Permanent Library</a>
+  </header>
+
+  <p class="updated">Last updated: April 26, 2026</p>
+
+  <h2>1. Nature of This Service</h2>
+  <p>The Permanent Library is an open-source software tool that provides two functions:</p>
+  <p><strong>A. Uploader:</strong> A client-side web interface that encodes documents into blockchain-compatible calldata and facilitates their submission as transactions from the user's own cryptocurrency wallet to a provably unowned burn address (<code style="font-size:12px;background:var(--vault-800);padding:2px 6px;border-radius:3px;color:var(--amber-bright)">0x734F6C30fcd31819c46E49B98C69D89978446fa6</code>) on supported public blockchains (Ethereum, Polygon, and Arbitrum).</p>
+  <p><strong>B. Indexer and Search Portal:</strong> A read-only service that scans publicly available blockchain data for transactions matching the PERMLIB-V1 encoding specification, and presents them in a searchable format.</p>
+  <p>The Permanent Library does not store, host, or transmit user-uploaded content. All documents are written directly to public blockchains by the user's own wallet. The Permanent Library's servers never receive, process, or relay document content at any point during the upload process. The indexer only reads data that is already publicly and permanently available on the blockchain.</p>
+
+  <hr class="section-divider">
+
+  <h2>2. The Permanent Library Is a Tool, Not a Publisher</h2>
+  <p>The Permanent Library is a software tool, not a content platform, publisher, or hosting service. It functions analogously to a blockchain explorer (such as Etherscan) — it reads and displays data that already exists on public blockchains.</p>
+  <p>The operators of The Permanent Library:</p>
+  <ul>
+    <li>Do not select, curate, edit, approve, endorse, or modify any content uploaded by users.</li>
+    <li>Do not have the ability to remove, alter, or censor any content once it has been written to the blockchain by a user. This is an inherent and intentional property of blockchain technology.</li>
+    <li>Do not have access to, custody of, or control over any user's cryptocurrency wallet, private keys, or funds.</li>
+    <li>Do not operate or control the blockchain networks on which data is stored.</li>
+    <li>Have no knowledge of what content a user intends to upload before the user independently signs and broadcasts a blockchain transaction from their own wallet.</li>
+  </ul>
+
+  <hr class="section-divider">
+
+  <h2>3. User Responsibility</h2>
+  <p>By using The Permanent Library, you acknowledge and agree that:</p>
+  <ul>
+    <li><strong>You are solely and entirely responsible for any content you upload.</strong> You bear full legal responsibility for any documents, text, images, or other data you submit to the blockchain using this tool.</li>
+    <li><strong>You will not upload content that infringes the intellectual property rights of others</strong>, including copyrighted material for which you do not hold the rights or have proper authorization.</li>
+    <li><strong>You will not upload content that violates applicable laws</strong> in your jurisdiction, including but not limited to content that constitutes defamation, incitement to violence, child exploitation material, terrorism-related content, or trade secrets.</li>
+    <li><strong>You understand that uploads are permanent and irreversible.</strong> Once a transaction is confirmed on the blockchain, the data cannot be deleted, modified, or removed by anyone — including the operators of The Permanent Library.</li>
+    <li><strong>You understand that uploads are public.</strong> Any content uploaded using this tool will be permanently and publicly visible to anyone who accesses the blockchain, regardless of whether The Permanent Library's indexer or website continues to operate.</li>
+    <li><strong>You are responsible for all transaction fees (gas costs)</strong> incurred when submitting transactions to the blockchain. The Permanent Library does not charge any fees and does not receive any portion of gas costs.</li>
+  </ul>
+
+  <hr class="section-divider">
+
+  <h2>4. No Content Moderation or Takedown Capability</h2>
+  <p>Due to the fundamental architecture of blockchain technology, The Permanent Library cannot comply with content removal requests for data that has been written to the blockchain. This is not a policy choice — it is a technical impossibility inherent to all public, permissionless blockchains.</p>
+  <p>The indexer and search portal operated by The Permanent Library may, at the operators' sole discretion, exclude specific documents from being displayed in search results. However, any such exclusion from the indexer does not affect the underlying blockchain data, which remains publicly accessible through any blockchain explorer, node, or compatible reader application.</p>
+  <p>If you believe that content indexed by The Permanent Library violates your rights, you may contact <a href="mailto:librarian@thepermanentlibrary.org">librarian@thepermanentlibrary.org</a> with a detailed description of your concern. The operators will review all communications in good faith, but make no guarantees regarding action taken, as the underlying data exists beyond the control of any single party.</p>
+
+  <hr class="section-divider">
+
+  <h2>5. Intellectual Property and Copyright</h2>
+  <p>The Permanent Library does not claim any ownership over content uploaded by users. All content remains the intellectual property of its respective owners.</p>
+  <p>The Permanent Library software itself is released as open source under the MIT License. The source code is publicly available for inspection, audit, and use by anyone.</p>
+  <p>Users who upload content represent and warrant that they either own the content or have the legal right to distribute it. The Permanent Library is not responsible for verifying ownership or licensing of user-uploaded content.</p>
+
+  <hr class="section-divider">
+
+  <h2>6. Disclaimer of Warranties</h2>
+  <p class="caps">THE PERMANENT LIBRARY IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE. THE OPERATORS EXPRESSLY DISCLAIM ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO:</p>
+  <ul>
+    <li class="caps">WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.</li>
+    <li class="caps">WARRANTIES THAT THE SERVICE WILL BE UNINTERRUPTED, ERROR-FREE, SECURE, OR FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.</li>
+    <li class="caps">WARRANTIES REGARDING THE ACCURACY, COMPLETENESS, RELIABILITY, OR AVAILABILITY OF ANY CONTENT DISPLAYED BY THE INDEXER OR SEARCH PORTAL.</li>
+    <li class="caps">WARRANTIES THAT THE BLOCKCHAIN NETWORKS USED FOR STORAGE WILL CONTINUE TO OPERATE OR REMAIN ACCESSIBLE.</li>
+  </ul>
+  <p>The operators do not warrant that the encoding specification (PERMLIB-V1) will be compatible with future blockchain protocol changes or that documents encoded today will remain decodable indefinitely, although the specification is designed for maximum longevity.</p>
+
+  <hr class="section-divider">
+
+  <h2>7. Limitation of Liability</h2>
+  <p class="caps">TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE OPERATORS OF THE PERMANENT LIBRARY SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, ARISING OUT OF OR RELATED TO:</p>
+  <ul>
+    <li class="caps">YOUR USE OF, INABILITY TO USE, OR RELIANCE ON THE SERVICE.</li>
+    <li class="caps">ANY CONTENT UPLOADED BY YOU OR ANY OTHER USER.</li>
+    <li class="caps">ANY UNAUTHORIZED ACCESS TO OR ALTERATION OF YOUR TRANSMISSIONS OR DATA.</li>
+    <li class="caps">THE CONDUCT OF ANY THIRD PARTY ON OR RELATED TO THE SERVICE.</li>
+    <li class="caps">THE PERMANENT OR TEMPORARY CESSATION OF THE SERVICE OR ANY FEATURES THEREOF.</li>
+    <li class="caps">ANY TRANSACTION FEES OR GAS COSTS INCURRED IN CONNECTION WITH USING THE SERVICE.</li>
+    <li class="caps">ANY LOSS OF FUNDS RESULTING FROM TRANSACTIONS SENT TO THE BURN ADDRESS OR ANY OTHER ADDRESS.</li>
+  </ul>
+
+  <hr class="section-divider">
+
+  <h2>8. Assumption of Risk</h2>
+  <p>You acknowledge that the use of blockchain technology, cryptocurrency wallets, and decentralized systems involves inherent risks, including but not limited to:</p>
+  <ul>
+    <li><strong>Permanent data exposure.</strong> Content uploaded to the blockchain cannot be removed and will be publicly accessible indefinitely.</li>
+    <li><strong>Financial loss.</strong> Funds sent as transaction fees (gas) are non-refundable. Funds sent to the burn address are irrecoverable by design.</li>
+    <li><strong>Smart contract and protocol risk.</strong> Although The Permanent Library does not use smart contracts, the underlying blockchain networks may experience bugs, forks, or changes that could affect data accessibility.</li>
+    <li><strong>Regulatory risk.</strong> The legal status of blockchain-based data storage may change in various jurisdictions. You are solely responsible for compliance with laws applicable to you.</li>
+    <li><strong>Privacy risk.</strong> Blockchain transactions are public by design. Your wallet address and all associated transactions are permanently visible. Do not upload content if you require confidentiality.</li>
+  </ul>
+
+  <hr class="section-divider">
+
+  <h2>9. Indemnification</h2>
+  <p>You agree to indemnify, defend, and hold harmless the operators of The Permanent Library from and against any and all claims, liabilities, damages, losses, costs, and expenses (including reasonable legal fees) arising out of or related to your use of the service, your uploaded content, or your violation of these Terms.</p>
+
+  <hr class="section-divider">
+
+  <h2>10. No Financial Service</h2>
+  <p>The Permanent Library is not a financial service, investment platform, or money transmitter. No financial advice is provided. The burn address is provably unowned — funds sent to it are permanently destroyed. The Permanent Library does not hold, manage, or have access to any user funds at any time.</p>
+
+  <hr class="section-divider">
+
+  <h2>11. Service Availability</h2>
+  <p>The operators may modify, suspend, or discontinue the website, indexer, or search portal at any time without notice. The open-source nature of the software and the standalone reader application ensure that documents remain accessible even if the website ceases to operate. The blockchain data exists independently of The Permanent Library's infrastructure.</p>
+
+  <hr class="section-divider">
+
+  <h2>12. Privacy</h2>
+  <p>The Permanent Library does not collect personal information, does not use cookies for tracking purposes, does not require user accounts or registration, and does not store any user data on its servers. The indexer reads only publicly available blockchain data.</p>
+  <p>Your blockchain wallet address and transaction history are inherently public on the blockchain and are not within The Permanent Library's control.</p>
+
+  <hr class="section-divider">
+
+  <h2>13. Open Source</h2>
+  <p>The Permanent Library is an open-source public good. The complete source code is publicly available for review, audit, forking, and self-hosting. Anyone may operate their own instance of the indexer to independently verify and access on-chain documents.</p>
+
+  <hr class="section-divider">
+
+  <h2>14. Governing Law</h2>
+  <p>These terms shall be interpreted in accordance with applicable international law. Given the decentralized and pseudonymous nature of this project, the operators do not submit to the exclusive jurisdiction of any particular court or legal system. Disputes arising under these terms should be resolved through good-faith communication to <a href="mailto:librarian@thepermanentlibrary.org">librarian@thepermanentlibrary.org</a>.</p>
+
+  <hr class="section-divider">
+
+  <h2>15. Modifications</h2>
+  <p>These Terms of Service may be updated from time to time. Changes will be posted on this page with an updated revision date. Your continued use of The Permanent Library after any modifications constitutes acceptance of the revised terms.</p>
+
+  <hr class="section-divider">
+
+  <h2>16. Severability</h2>
+  <p>If any provision of these Terms is found to be invalid, illegal, or unenforceable, the remaining provisions shall continue in full force and effect.</p>
+
+  <hr class="section-divider">
+
+  <h2>17. Contact</h2>
+  <p>For questions, concerns, or security disclosures:</p>
+  <p><strong>Email:</strong> <a href="mailto:librarian@thepermanentlibrary.org">librarian@thepermanentlibrary.org</a></p>
+  <p><strong>Website:</strong> <a href="https://thepermanentlibrary.org">https://thepermanentlibrary.org</a></p>
+  <p><strong>Security:</strong> <a href="https://thepermanentlibrary.org/.well-known/security.txt">https://thepermanentlibrary.org/.well-known/security.txt</a></p>
+
+  <footer>
+    <span>The Permanent Library — Open Source Public Good</span>
+    <span>Knowledge should outlive those who create it.</span>
+  </footer>
+</div>
+</body>
+</html>

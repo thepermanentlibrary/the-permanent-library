@@ -1,0 +1,17 @@
+{
+  "name": "the-permanent-library-indexer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Indexer and search portal for The Permanent Library",
+  "scripts": {
+    "start": "node --env-file=.env src/index.js",
+    "postinstall": "cp node_modules/marked/lib/marked.umd.js public/marked.umd.js"
+  },
+  "dependencies": {
+    "ethers": "^6.16.0",
+    "express": "^5.2.1",
+    "marked": "^18.0.2",
+    "pg": "^8.20.0"
+  }
+}
